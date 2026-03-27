@@ -77,6 +77,7 @@
             "@type": "PostalAddress",
             "addressCountry": "IN"
         },
+        "sameAs": [],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "AI Creative Services",
@@ -104,6 +105,14 @@
                         "name": "AI Ad Creatives",
                         "description": "High-conversion advertising creatives optimized for paid campaigns"
                     }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Lifestyle Imagery",
+                        "description": "AI-generated lifestyle and social media content for brands"
+                    }
                 }
             ]
         }
@@ -116,12 +125,38 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "OriginX Studio",
+        "alternateName": "Originx Studio",
         "url": "https://originxstudio.in",
         "potentialAction": {
             "@type": "SearchAction",
             "target": "https://originxstudio.in/?s={search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    </script>
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "OriginX Studio",
+        "url": "https://originxstudio.in",
+        "logo": "https://originxstudio.in/android-chrome-512x512.png",
+        "image": "https://originxstudio.in/og-image.png",
+        "description": "AI Product Photography & Creative Studio for E-commerce Brands",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "serviceType": [
+            "AI Product Photography",
+            "AI Model Photography",
+            "AI Ad Creatives",
+            "E-commerce Photography",
+            "Brand Visual Design"
+        ]
     }
     </script>
 
@@ -175,25 +210,18 @@
     }
     </script>
 
-    <!-- Professional Service Schema -->
+    <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "OriginX Studio",
-        "url": "https://originxstudio.in",
-        "logo": "https://originxstudio.in/android-chrome-512x512.png",
-        "description": "AI Product Photography & Creative Studio for E-commerce Brands",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "IN"
-        },
-        "serviceType": [
-            "AI Product Photography",
-            "AI Model Photography",
-            "AI Ad Creatives",
-            "E-commerce Photography"
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://originxstudio.in/"
+            }
         ]
     }
     </script>
@@ -209,20 +237,21 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background-color: #000;
+            background: #000;
         }
 
+        /* Framer Site - Full Screen Fixed */
         iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 10;
         }
 
-        /* SEO Content - Hidden from visitors but readable by Google */
+        /* SEO Content - Hidden from visitors, readable by Google */
         .seo-content {
             position: absolute;
             width: 1px;
@@ -237,6 +266,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- FRAMER SITE - Full Screen -->
@@ -247,92 +277,76 @@
         title="OriginX Studio - AI Product Photography & Creative Studio"
     ></iframe>
 
-    <!-- SEO Content - Hidden from visitors, visible to Google -->
+    <!-- SEO CONTENT - Hidden from visitors but Google can read -->
     <div class="seo-content">
 
         <h1>AI Product Photography & Creative Studio — OriginX Studio</h1>
-        <p>
-            OriginX Studio is India's leading AI creative studio specializing in
-            AI-generated product photography, AI model visuals,
-            and high-performance advertising creatives for e-commerce brands and digital businesses.
-            We help brands create stunning visuals at 80% lower cost than traditional photoshoots.
-        </p>
+        <p>OriginX Studio is India's leading AI creative studio specializing in AI-generated product photography, AI model visuals, and high-performance advertising creatives for e-commerce brands and digital businesses. We help brands create stunning visuals at 80% lower cost than traditional photoshoots.</p>
 
         <h2>AI Product Photography for E-Commerce</h2>
-        <p>
-            We create high-quality, photorealistic product images using advanced AI technology,
-            completely eliminating the need for expensive traditional photoshoots. Our AI product photography
-            is perfect for Shopify stores, Amazon listings, Flipkart, and D2C brands.
-        </p>
+        <p>We create high-quality, photorealistic product images using advanced AI technology, completely eliminating the need for expensive traditional photoshoots. Our AI product photography is perfect for Shopify stores, Amazon listings, Flipkart, and D2C brands.</p>
 
         <h3>Studio Product Images</h3>
-        <p>Clean, professional product shots with perfectly controlled lighting, shadows, and backgrounds.
-        Ideal for e-commerce listings and catalogs.</p>
+        <p>Clean, professional product shots with perfectly controlled lighting, shadows, and backgrounds. Ideal for e-commerce listings and catalogs.</p>
 
         <h3>Lifestyle Product Visuals</h3>
-        <p>Real-world scenario visuals showing your products in context. These images
-        increase engagement by up to 40% and boost conversions on product pages.</p>
+        <p>Real-world scenario visuals showing your products in context. These images increase engagement by up to 40% and boost conversions on product pages.</p>
 
         <h3>Marketplace Optimized Images</h3>
-        <p>Images specifically tailored and optimized for Amazon A+ content, Flipkart listings,
-        Shopify stores, and Meesho with proper dimensions and guidelines compliance.</p>
+        <p>Images specifically tailored and optimized for Amazon A+ content, Flipkart listings, Shopify stores, and Meesho with proper dimensions and guidelines compliance.</p>
 
-        <h3>360° Product Views</h3>
-        <p>AI-generated multi-angle product images that give customers a
-        complete view of your product from every angle.</p>
+        <h3>360 Degree Product Views</h3>
+        <p>AI-generated multi-angle product images that give customers a complete view of your product from every angle.</p>
 
         <h2>AI Model and Lifestyle Imagery</h2>
-        <p>
-            Generate realistic, diverse AI models for fashion, beauty, and brand campaigns
-            without the cost of hiring real models, photographers, or booking studio space.
-        </p>
+        <p>Generate realistic, diverse AI models for fashion, beauty, and brand campaigns without the cost of hiring real models, photographers, or booking studio space.</p>
 
         <h3>Fashion Model Visuals</h3>
-        <p>AI-generated fashion models customized to match your brand identity. Choose ethnicity,
-        body type, pose, expression, and styling. Perfect for clothing and apparel brands.</p>
+        <p>AI-generated fashion models customized to match your brand identity. Choose ethnicity, body type, pose, expression, and styling. Perfect for clothing and apparel brands.</p>
 
         <h3>Beauty and Cosmetic Campaign Imagery</h3>
-        <p>Ultra-high-detail visuals for skincare, makeup, and cosmetic products.
-        Show your products on realistic AI models with perfect skin texture and lighting.</p>
+        <p>Ultra-high-detail visuals for skincare, makeup, and cosmetic products. Show your products on realistic AI models with perfect skin texture and lighting.</p>
 
         <h3>Social Media Lifestyle Content</h3>
-        <p>Create scroll-stopping lifestyle content designed specifically for
-        Instagram, Facebook, Pinterest, and TikTok. Content that drives engagement and shares.</p>
+        <p>Create scroll-stopping lifestyle content designed specifically for Instagram, Facebook, Pinterest, and TikTok. Content that drives engagement and shares.</p>
 
-        <h3>Influencer-Style Content</h3>
-        <p>AI-generated content that looks like real influencer photos.
-        Authentic, relatable, and high-converting for social media marketing.</p>
+        <h3>Influencer Style Content</h3>
+        <p>AI-generated content that looks like real influencer photos. Authentic, relatable, and high-converting for social media marketing.</p>
 
         <h2>AI Advertising and Campaign Creatives</h2>
-        <p>
-            We design high-conversion advertising creatives optimized for paid ads
-            and marketing campaigns across all platforms.
-        </p>
+        <p>We design high-conversion advertising creatives optimized for paid ads and marketing campaigns across all platforms.</p>
 
         <h3>Performance Marketing Creatives</h3>
         <p>Ad visuals specifically built to maximize CTR and ROAS on Facebook Ads, Google Ads, and Instagram Ads.</p>
 
         <h3>Brand Storytelling Campaigns</h3>
-        <p>Creative visual campaigns that tell your brand story and create
-        emotional connections with your target audience.</p>
+        <p>Creative visual campaigns that tell your brand story and create emotional connections with your target audience.</p>
 
         <h3>Creative Variations for A/B Testing</h3>
-        <p>Multiple ad variations generated quickly for split testing and campaign optimization.</p>
+        <p>Multiple ad variations generated quickly for split testing and campaign optimization. Test different visuals, backgrounds, and layouts to find what converts best.</p>
+
+        <h3>Social Media Ad Templates</h3>
+        <p>Ready-to-use ad templates optimized for Instagram Stories, Facebook Feed, Google Display Network, and YouTube Ads.</p>
 
         <h2>Why Choose AI Product Photography</h2>
 
-        <h3>80% Cost Savings</h3>
-        <p>Save up to 80% compared to traditional photoshoots. No studio rental,
-        no photographer fees, no model charges.</p>
+        <h3>80 Percent Cost Savings</h3>
+        <p>Save up to 80% compared to traditional photoshoots. No studio rental, no photographer fees, no model charges, no travel costs.</p>
 
         <h3>3x Faster Turnaround</h3>
-        <p>Get your product visuals in 2-5 business days instead of weeks.</p>
+        <p>Get your product visuals in 2-5 business days instead of weeks. Launch products faster and stay ahead of competitors.</p>
 
         <h3>Unlimited Creative Possibilities</h3>
-        <p>Generate any scene, background, lighting, or concept instantly.</p>
+        <p>Generate any scene, background, lighting, or concept instantly. From studio shots to exotic locations, all powered by AI.</p>
 
         <h3>Higher Conversion Rates</h3>
-        <p>Professional AI-generated images increase conversion rates by up to 200%.</p>
+        <p>Professional AI-generated images increase conversion rates by up to 200% compared to amateur product photos.</p>
+
+        <h3>Easy Revisions</h3>
+        <p>Need changes? AI makes revisions instant and unlimited. Change backgrounds, lighting, angles in minutes, not days.</p>
+
+        <h3>Platform Perfect Sizing</h3>
+        <p>Every image delivered in perfect dimensions for every platform. Amazon, Shopify, Instagram, Facebook Ads, and more.</p>
 
         <h2>Who We Work With</h2>
         <ul>
@@ -340,38 +354,51 @@
             <li>Fashion and Apparel Companies — Clothing, footwear, accessories brands</li>
             <li>Cosmetics and Beauty Brands — Skincare, makeup, personal care</li>
             <li>Food and Beverage Brands — Product packaging and lifestyle shots</li>
+            <li>Electronics and Gadget Companies — Tech product photography</li>
             <li>Startups and D2C Brands — New brands launching online</li>
             <li>Marketing Agencies — Agencies needing quick creative assets</li>
+            <li>Digital Businesses — SaaS, apps, and digital products</li>
         </ul>
 
         <h2>How It Works</h2>
-        <h3>Step 1: Share Your Product</h3>
+
+        <h3>Step 1 Share Your Product</h3>
         <p>Send us your product photos or samples. Tell us your brand style and vision.</p>
-        <h3>Step 2: We Create AI Visuals</h3>
+
+        <h3>Step 2 We Create AI Visuals</h3>
         <p>Our AI studio generates multiple professional-quality visual options for you.</p>
-        <h3>Step 3: Review and Revise</h3>
+
+        <h3>Step 3 Review and Revise</h3>
         <p>Review the visuals. Request any changes. Revisions are quick and easy.</p>
-        <h3>Step 4: Download and Use</h3>
+
+        <h3>Step 4 Download and Use</h3>
         <p>Get your final images in high resolution, ready to use across all platforms.</p>
 
         <h2>Frequently Asked Questions</h2>
+
         <h3>What is AI Product Photography?</h3>
-        <p>AI product photography uses artificial intelligence to generate professional product images without traditional photoshoots. It saves up to 80% cost and delivers results in days.</p>
+        <p>AI product photography uses artificial intelligence to generate professional, photorealistic product images without traditional photoshoots. It saves up to 80% cost and delivers results in days instead of weeks. OriginX Studio specializes in creating these AI-powered visuals for e-commerce brands.</p>
 
         <h3>How much does AI product photography cost?</h3>
-        <p>AI product photography at OriginX Studio costs up to 80% less than traditional photoshoots.</p>
+        <p>AI product photography at OriginX Studio costs up to 80% less than traditional photoshoots. Pricing varies based on the number of images, complexity, and customization required. Contact us for a custom quote.</p>
 
-        <h3>Can AI generate model images for fashion brands?</h3>
-        <p>Yes, OriginX Studio creates realistic AI-generated model visuals for fashion, beauty, and lifestyle brands.</p>
+        <h3>Can AI generate realistic model images for fashion brands?</h3>
+        <p>Yes! OriginX Studio creates highly realistic AI-generated model visuals for fashion, beauty, and lifestyle brands. You can customize ethnicity, body type, pose, and styling without hiring real models.</p>
 
         <h3>What platforms are AI product images optimized for?</h3>
-        <p>Our images are optimized for Amazon, Flipkart, Shopify, Instagram, Facebook Ads, and all major platforms.</p>
+        <p>Our AI product images are optimized for Amazon, Flipkart, Shopify, Meesho, Instagram, Facebook Ads, Google Ads, Pinterest, and all major e-commerce and social media platforms.</p>
 
         <h3>How fast can I get AI product photos?</h3>
-        <p>OriginX Studio delivers AI product photos within 2-5 business days.</p>
+        <p>OriginX Studio delivers AI product photos within 2-5 business days, compared to 2-4 weeks with traditional photography. Rush orders can be delivered even faster.</p>
 
-        <p>© 2025 OriginX Studio. All Rights Reserved. AI Product Photography India.</p>
-        <a href="https://originxstudio.in">OriginX Studio - AI Product Photography</a>
+        <h3>Are AI-generated images good enough for Amazon listings?</h3>
+        <p>Absolutely! Our AI product images meet all Amazon image requirements and guidelines. They are high-resolution, professional quality, and optimized for maximum conversions on Amazon and other marketplaces.</p>
+
+        <h3>Do you offer revisions?</h3>
+        <p>Yes, we offer revisions on all projects. With AI, changes like backgrounds, lighting, and angles can be made quickly and easily.</p>
+
+        <p>© 2025 OriginX Studio. All Rights Reserved. AI Product Photography India. Visit originxstudio.in</p>
+        <a href="https://originxstudio.in">OriginX Studio - AI Product Photography and Creative Studio India</a>
 
     </div>
 
